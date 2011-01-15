@@ -1,0 +1,25 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/Catalyst/TraitFor/Model/DBIC/Schema/ResultRoles.pm
+t/00-load.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t
+t/boilerplate.t
+t/resultroles.t
+t/lib/MyApp.pm
+t/lib/MyApp/Schema.pm
+t/lib/MyApp/Model/DB.pm
+t/lib/MyApp/Controller/Books.pm
+t/lib/MyApp/Schema/Result/Book.pm
+t/lib/MyApp/Schema/Result/Author.pm
+t/lib/MyApp/Schema/Result/BookAuthor.pm
+t/lib/MyApp/Schema/ResultRole/Book/Count.pm
+t/lib/MyApp/Schema/ResultRole/Book/Authors.pm
+t/lib/MyApp/Schema/ResultRole/Author/Name.pm
+t/lib/MyApp/Schema/ResultRole/Author/Books.pm
+t/var/placeholder
+
+META.yml                                 Module meta-data (added by MakeMaker)
