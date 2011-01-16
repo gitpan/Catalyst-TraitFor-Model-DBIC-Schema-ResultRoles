@@ -13,7 +13,7 @@ use Moose::Role;
 use Moose::Util qw/apply_all_roles/;
 use Module::Find qw/findallmod/;
 
-our $VERSION = 0.01;
+our $VERSION = 0.0101;
 
 requires qw/BUILD schema schema_class/;
 
@@ -165,7 +165,7 @@ Catalyst::TraitFor::Model::DBIC::Schema::ResultRoles - Automatically applying Mo
 
 =head1 VERSION
 
-Version 0.01
+Version 0.0101
 
 =head1 SYNOPSIS
 
@@ -267,7 +267,7 @@ by calling $self->schema_class and appending "::ResultRole".
 Example: Assumed the application name is "MyApp", and the schema class is 
 "MyApp::Schema": The result_location will be set to "MyApp::Schema::ResultRole"
 
-Catalyst::TraitFor::Model::DBIC::Schema::Result uses L<Module::Finder/find_all_modules> to 
+Catalyst::TraitFor::Model::DBIC::Schema::Result uses L<Module::Find/find_all_modules> to 
 find possible roles for each defined result source. The roles namespace is expected to be:
 
  $self->role_location . "::". $souce_name
@@ -363,7 +363,11 @@ automatically be notified of progress on your bug as I make changes.
 
 =over 2
 
+=item * applying roles to ResultSets
+
 =item * manually loading roles from other locations than $self->role_location
+
+=item * moosify result classes on demand
 
 =back
 
@@ -377,24 +381,26 @@ You can find documentation for this module with the perldoc command.
 
 	perldoc Catalyst::TraitFor::Model::DBIC::Schema::ResultRoles
 
-Check out current versions via subversion at http://svn.thiemeier.net/public/ResultRole
+A public subversion repository is available at: 
+http://svn.thiemeier.net/public/ResultRole
 
-WebSVN is availabel at L<http://svn.thiemeier.net>
+WebSVN is available at L<http://svn.thiemeier.net/>
 
 =head2 SEE ALSO
 
 =over 2
 
-=item * L<Moose::Role> 
-
 =item * L<Catalyst::Model::DBIC::Schema/traits>
 
 =item * L<DBIx::Class::Schema>
 
-=item * L<MooseX::NonMoose> 
+=item * L<Module::Find> 
+
+=item * L<Moose::Role> 
 
 =item * L<Moose::Util> 
 
+=item * L<MooseX::NonMoose> 
 
 =back
 
