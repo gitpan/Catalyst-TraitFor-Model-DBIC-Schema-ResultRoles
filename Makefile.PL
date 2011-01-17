@@ -18,14 +18,18 @@ WriteMakefile(
 		'Module::Find' => "0.10",
 		'namespace::autoclean' => "0.11",
 
+	},
+	CONFIGURE_REQUIRES => {
+		'ExtUtils::MakeMaker' => "6.56",
+	},
+	BUILD_REQUIRES =>{
 		'Test::More' => "0.96",
 		'Moose' => "1.21",
 		'MooseX::NonMoose' => "0.17",
 		'Catalyst::Runtime' => "5.80",
+		'Catalyst::Model::DBIC::Schema', => "0.48",
 		'DBIx::Class' => "0.08126",
-		'DBD::SQLite' => "1.31",
 		'SQL::Translator' => "0.11007",
-
 	},
 	dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
 	clean               => { FILES => 'Catalyst-TraitFor-Model-DBIC-Schema-ResultRoles-*' },

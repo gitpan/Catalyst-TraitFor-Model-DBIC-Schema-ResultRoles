@@ -1,27 +1,26 @@
 --- #YAML:1.0
 name:               Catalyst-TraitFor-Model-DBIC-Schema-ResultRoles
-version:            0.0101
+version:            0.0102
 abstract:           automatically applying Moose Roles do Catalyst::Model::DBIC::Schema - resultclasses
 author:
     - Lukas Thiemeier <lukast@cpan.org>
 license:            perl
 distribution_type:  module
 configure_requires:
-    ExtUtils::MakeMaker:  0
+    ExtUtils::MakeMaker:  6.56
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
+    Catalyst::Model::DBIC::Schema:  0.48
     Catalyst::Runtime:    5.80
-    DBD::SQLite:          1.31
     DBIx::Class:          0.08126
-    Module::Find:         0.10
     Moose:                1.21
-    Moose::Role:          1.21
-    Moose::Util:          1.21
     MooseX::NonMoose:     0.17
-    namespace::autoclean:  0.11
     SQL::Translator:      0.11007
     Test::More:           0.96
+requires:
+    Module::Find:         0.10
+    Moose::Role:          1.21
+    Moose::Util:          1.21
+    namespace::autoclean:  0.11
 no_index:
     directory:
         - t
