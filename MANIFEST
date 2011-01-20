@@ -8,7 +8,8 @@ t/manifest.t
 t/pod-coverage.t
 t/pod.t
 t/boilerplate.t
-t/resultroles.t
+t/resultroles-catalyst.t
+t/resultroles-basic.t
 t/lib/MyApp.pm
 t/lib/MyApp/Schema.pm
 t/lib/MyApp/Model/DB.pm
@@ -20,6 +21,8 @@ t/lib/MyApp/Schema/ResultRole/Book/Count.pm
 t/lib/MyApp/Schema/ResultRole/Book/Authors.pm
 t/lib/MyApp/Schema/ResultRole/Author/Name.pm
 t/lib/MyApp/Schema/ResultRole/Author/Books.pm
+t/lib/RRBasicTest.pm
+t/lib/RRBasicTest/Schema/ResultRole/Dummy/Hello.pm
 t/var/placeholder
 
 META.yml                                 Module meta-data (added by MakeMaker)

@@ -15,7 +15,8 @@ __PACKAGE__->config(
 
 	'Model::DB' => {
 		traits => 'ResultRoles',
-		rr_debug => 1,
+		rr_debug => 0,
+		rr_quiet => 1,
 	},
 );
 
