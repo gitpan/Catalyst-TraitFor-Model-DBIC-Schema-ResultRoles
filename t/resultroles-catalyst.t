@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More tests => 5;
+use Test::More tests => 6;
 
 my $required = {
 	'Moose' => "1.2.1",
@@ -56,6 +56,8 @@ SKIP: {
 
 
 	      use lib "t/lib";
+
+	      use_ok('MyAppCreateDB'); # fill database
 
 #try to load the application
 	      use_ok("Catalyst::Test", "MyApp") ;
