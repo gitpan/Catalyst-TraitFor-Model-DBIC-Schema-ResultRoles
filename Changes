@@ -13,3 +13,7 @@ Revision history for Catalyst-TraitFor-Model-DBIC-Schema-ResultRoles
 0.0104    2011-01-21 01:50
 	dependencies updated in Makefile.PL
 
+0.0106    2011-05-17 03:17
+	db-creation moved to an extra module
+
+

@@ -17,6 +17,11 @@ __PACKAGE__->config(
 		traits => 'ResultRoles',
 		rr_debug => 0,
 		rr_quiet => 1,
+		connect_info => {
+			user => undef,
+			pass => undef,
+			dsn => 'dbi:SQLite:t/var/myapp.db',
+		},
 	},
 );
 

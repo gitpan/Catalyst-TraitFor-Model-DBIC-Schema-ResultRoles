@@ -13,7 +13,7 @@ use Moose::Role;
 use Moose::Util qw/apply_all_roles/;
 use Module::Find qw/findallmod/;
 
-our $VERSION = 0.0104;
+our $VERSION = 0.0106;
 
 requires qw/BUILD schema schema_class/;
 
