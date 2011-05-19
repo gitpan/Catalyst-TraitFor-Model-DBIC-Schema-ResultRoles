@@ -51,7 +51,7 @@ if(%$required){
 
 
 SKIP: {
-	      skip 'missing dependencies',5 if %$required;
+	      skip 'missing dependencies',6 if %$required;
 
 
 

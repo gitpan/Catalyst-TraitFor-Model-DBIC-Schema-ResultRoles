@@ -13,7 +13,7 @@ use Moose::Role;
 use Moose::Util qw/apply_all_roles/;
 use Module::Find qw/findallmod/;
 
-our $VERSION = 0.0109;
+our $VERSION = 0.0110;
 
 requires qw/BUILD schema schema_class/;
 
@@ -165,7 +165,7 @@ Catalyst::TraitFor::Model::DBIC::Schema::ResultRoles - Automatically applying Mo
 
 =head1 VERSION
 
-Version 0.0104
+Version 0.0110
 
 =head1 SYNOPSIS
 

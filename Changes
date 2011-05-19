@@ -19,4 +19,6 @@ Revision history for Catalyst-TraitFor-Model-DBIC-Schema-ResultRoles
 0.0108    2011-05-17 03:36
 	fixed bug in pervious tests
 
+0.0110    2011-05-19 11:30
+	another fix in catalyst-tests
 
